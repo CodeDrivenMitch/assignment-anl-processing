@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * Created by mitchell on 5/14/2014.
  */
-public class SketchAssignmentOne extends PApplet implements Assignment {
+public class SketchAssignmentOne extends Assignment {
     private Diagram cirkel;
     private Diagram bar;
     private static final String workingdir = "C:\\Users\\mitchell\\IdeaProjects\\DEVopdracht1\\";
@@ -50,9 +50,5 @@ public class SketchAssignmentOne extends PApplet implements Assignment {
         return "Assignment One";
     }
 
-    @Override
-    public void launch() {
-        PApplet.main(this.getClass().getName());
 
-    }
 }

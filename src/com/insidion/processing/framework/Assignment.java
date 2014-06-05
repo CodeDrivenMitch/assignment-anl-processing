@@ -1,18 +1,23 @@
 package com.insidion.processing.framework;
 
+import processing.core.PApplet;
+
 /**
  * Created by mitchell on 6/5/2014.
  */
-public interface Assignment {
+public abstract class Assignment extends PApplet {
     /**
      * Force assignments to implement a toString method for the list text in the launcher
      * @return Name of assignment
      */
-    public String toString();
+    public abstract String toString();
 
     /**
      * Make Assignment applets Launchable
      */
-    public void launch();
+    public void launch() {
+        PApplet.main(this.getClass().getName());
+
+    }
 
 }

@@ -9,7 +9,7 @@ import processing.data.TableRow;
 /**
  * Created by mitchell on 5/21/2014.
  */
-public class CrimeSketch extends PApplet implements Assignment {
+public class CrimeSketch extends Assignment {
     private float scale;
 
     PShape usa;
@@ -51,8 +51,4 @@ public class CrimeSketch extends PApplet implements Assignment {
         return "Assignment Two - Crime";
     }
 
-    @Override
-    public void launch() {
-        PApplet.main(this.getClass().getName());
-    }
 }

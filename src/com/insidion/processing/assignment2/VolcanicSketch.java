@@ -11,7 +11,7 @@ import java.awt.*;
 /**
  * Created by mitchell on 5/16/2014.
  */
-public class VolcanicSketch extends PApplet implements Assignment {
+public class VolcanicSketch extends Assignment {
 
     private PImage img;
     Table table;
@@ -68,12 +68,6 @@ public class VolcanicSketch extends PApplet implements Assignment {
     @Override
     public String toString() {
         return "Assignment Two - Volcanic Activity";
-    }
-
-    @Override
-    public void launch() {
-        PApplet.main(this.getClass().getName());
-
     }
 
 }
