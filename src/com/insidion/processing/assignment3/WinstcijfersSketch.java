@@ -39,6 +39,7 @@ public class WinstcijfersSketch extends Assignment {
         drawFrames();
         drawHorLabels();
         drawVertLabels();
+        drawLegenda();
 
 
     }
@@ -61,19 +62,22 @@ public class WinstcijfersSketch extends Assignment {
         fill(255, 255, 255);
 
         line(MARGIN, MARGIN, MARGIN, height - MARGIN);
-        line(MARGIN, height - MARGIN, width - MARGIN - LEGENDA_WIDTH - ((width - 2 * MARGIN) / table.getRowCount()), height - MARGIN);
+        line(MARGIN,
+                height - MARGIN,
+                width - 2 * MARGIN - LEGENDA_WIDTH,
+                height - MARGIN);
     }
 
     private void drawHorLabels() {
         int space = width - 2 * MARGIN - LEGENDA_WIDTH;
-        float spacePerRow = (float) space / length;
+        float spacePerRow = space / length;
 
         for (int i = 0; i < length; i++) {
-            int lineX = round(MARGIN + spacePerRow * i);
-            int lineY = height - MARGIN;
-            line(lineX, lineY, lineX, lineY - YEAR_SEP_HEIGHT);
+            float lineX = MARGIN + spacePerRow * i;
+            float lineY = height - MARGIN;
+            line(lineX, lineY, lineX, lineY + YEAR_SEP_HEIGHT);
 
-            float labelX = (MARGIN + (spacePerRow * i));
+            float labelX = round(MARGIN + (spacePerRow * i));
             float labelY = height - MARGIN + 10;
             textAlign(LEFT);
             pushMatrix();
@@ -88,7 +92,7 @@ public class WinstcijfersSketch extends Assignment {
 
     private void drawVertLabels() {
         int length = maxValue / VALUE_SCALE;
-        int space = height - 2 * MARGIN - LEGENDA_WIDTH;
+        int space = height - 2 * MARGIN;
         int spacePerThing = space / length;
 
         for (int i = 1; i <= length; i++) {
@@ -137,6 +141,24 @@ public class WinstcijfersSketch extends Assignment {
             }
         }
 
+    }
+
+    private void drawLegenda() {
+        textAlign(LEFT);
+        for (int j = 1; j < table.getColumnCount(); j++) {
+            String text = table.getColumnTitle(j);
+            int color = colors[j];
+            fill(255, 255, 255);
+            text(text,
+                    width - MARGIN - (LEGENDA_WIDTH / 2),
+                    MARGIN + 30 * j);
+            fill(color);
+            stroke(color);
+            rect(width - MARGIN - LEGENDA_WIDTH + 10,
+                    MARGIN + 30 * j - 15,
+                    30,
+                    20);
+        }
     }
 
     @Override
