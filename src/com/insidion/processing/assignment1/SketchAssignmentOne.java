@@ -1,11 +1,7 @@
 package com.insidion.processing.assignment1;
 
 import com.insidion.processing.framework.Assignment;
-import processing.core.PApplet;
 
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 import java.io.IOException;
 
 /**

@@ -11,9 +11,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Vector;
-
-import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
 /**
  * Created by mitchell on 6/5/2014.
@@ -38,6 +35,8 @@ public class Launcher {
             }
         });
     }
+
+    //test commit filler
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Launcher");

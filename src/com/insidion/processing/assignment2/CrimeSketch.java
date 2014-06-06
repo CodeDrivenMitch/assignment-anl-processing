@@ -1,7 +1,6 @@
 package com.insidion.processing.assignment2;
 
 import com.insidion.processing.framework.Assignment;
-import processing.core.PApplet;
 import processing.core.PShape;
 import processing.data.Table;
 import processing.data.TableRow;
