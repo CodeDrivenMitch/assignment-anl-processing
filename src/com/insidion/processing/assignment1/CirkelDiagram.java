@@ -1,6 +1,5 @@
 package com.insidion.processing.assignment1;
 
-import com.insidion.processing.assignment1.Diagram;
 import processing.core.PApplet;
 
 import java.io.IOException;
