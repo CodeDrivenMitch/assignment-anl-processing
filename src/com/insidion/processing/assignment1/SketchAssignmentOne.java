@@ -43,7 +43,7 @@ public class SketchAssignmentOne extends Assignment {
 
     @Override
     public String toString() {
-        return "Assignment One";
+        return "Assignment One: Getting Started";
     }
 
 

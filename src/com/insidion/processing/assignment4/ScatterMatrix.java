@@ -117,6 +117,6 @@ public class ScatterMatrix extends Assignment {
 
     @Override
     public String toString() {
-        return "Assignment 4 - Scattermatrix";
+        return "Assignment Four - Scattermatrix";
     }
 }

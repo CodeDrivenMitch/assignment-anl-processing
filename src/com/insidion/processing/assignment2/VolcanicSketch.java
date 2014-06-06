@@ -18,13 +18,13 @@ public class VolcanicSketch extends Assignment {
     Point downright = new Point(790, 370);
 
     public void setup() {
+        super.setup();
         colorMode(HSB, 360, 100, 100);
-        size(900, 500);
         img = loadImage("http://i.imgur.com/4Hg4sa6.jpg", "jpg");
         loadData();
         colorMode(HSB, 100);
 
-        size(900, 500);
+        resize(800, 500);
 
 
     }

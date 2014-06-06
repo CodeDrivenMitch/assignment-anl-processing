@@ -27,6 +27,7 @@ public class CrimeSketch extends Assignment {
 
     }
 
+
     public void draw() {
         for (TableRow row : table.rows()) {
 
@@ -38,12 +39,25 @@ public class CrimeSketch extends Assignment {
 
             fill(100, (float) 1.8 * intensity, 100);
             shape(state, 0, 0);
+            stroke(0, 0, 0);
 
+            legend();
 
         }
 
+    }
+
+    public void legend() {
+
+
+        fill(0, 0, 100);
+        stroke(0,0,0);
+        rect(50, 40, 75, 75);
+
+
 
     }
+
 
     @Override
     public String toString() {

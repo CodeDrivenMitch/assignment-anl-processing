@@ -25,7 +25,7 @@ public class Launcher {
     private JPanel panelLauncher;
     private JTextPane textPaneMadeBy;
 
-    private static final String madeByText = "These Assignments were made by: \n Mitchell Herrijgers (0867804) \n Houssein Houssein () \n\n Hogeschool Rotterdam, INFDEV08 - Visualisatie";
+    private static final String madeByText = "These Assignments were made by: \n Mitchell Herrijgers (0867804) \n Houssein Houssein (0862841) \n\n Hogeschool Rotterdam, INFDEV08 - Visualisatie";
     private static final String startDescriptionText = "Select one of the assignments in the list on the right. You will find a description here, and can launch the assignment from the launch button!";
 
     public Launcher() {
