@@ -5,6 +5,7 @@ import com.insidion.processing.assignment2.CrimeSketch;
 import com.insidion.processing.assignment2.VolcanicSketch;
 import com.insidion.processing.assignment3.LifeExpectancySketch;
 import com.insidion.processing.assignment3.WinstcijfersSketch;
+import com.insidion.processing.assignment4.ScatterMatrix;
 import com.insidion.processing.framework.Assignment;
 
 import javax.swing.*;
@@ -62,6 +63,7 @@ public class Launcher {
         listModel.addElement(new CrimeSketch());
         listModel.addElement(new WinstcijfersSketch());
         listModel.addElement(new LifeExpectancySketch());
+        listModel.addElement(new ScatterMatrix());
         this.listAssignments.setModel(this.listModel);
 
         this.listAssignments.getSelectedIndex();

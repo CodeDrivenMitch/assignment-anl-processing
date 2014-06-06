@@ -19,6 +19,9 @@ public abstract class TableLineGraph extends Assignment {
     private int maxValue;
     private int length;
 
+    private float speed = 0.05f;
+    private float currentTime = 0;
+
     public void setup() {
         super.setup();
         table = prepareSketchAndFillData();
@@ -36,6 +39,10 @@ public abstract class TableLineGraph extends Assignment {
         drawHorLabels();
         drawVertLabels();
         drawLegenda();
+
+        currentTime += speed;
+
+        if(currentTime > 14) currentTime = 0;
     }
 
     private void drawFrames() {
@@ -110,7 +117,7 @@ public abstract class TableLineGraph extends Assignment {
     private void drawData() {
         strokeWeight(4);
 
-        for (int i = 1; i < table.getRowCount(); i++) {
+        for (int i = 1; i < round(currentTime); i++) {
             for (int j = 1; j < table.getColumnCount(); j++) {
                 stroke(this.colors[j]);
                 fill(this.colors[j]);
