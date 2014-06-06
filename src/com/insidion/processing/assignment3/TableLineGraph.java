@@ -9,11 +9,11 @@ import processing.data.TableRow;
  */
 public abstract class TableLineGraph extends Assignment {
 
-    private static final int MARGIN = 50;
+    private static final int MARGIN = 150;
     private static final int YEAR_SEP_HEIGHT = 5;
     private static final int VALUE_SEP_WIDTH = 5;
-    private static final int VALUE_SCALE = 25;
-    private static final int LEGENDA_WIDTH = 100;
+    private static final int VALUE_SCALE = 10;
+    private static final int LEGENDA_WIDTH = 50;
 
     private Table table;
     private int maxValue;
