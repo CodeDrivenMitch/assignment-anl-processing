@@ -3,6 +3,7 @@ package com.insidion.processing.gui;
 import com.insidion.processing.assignment1.SketchAssignmentOne;
 import com.insidion.processing.assignment2.CrimeSketch;
 import com.insidion.processing.assignment2.VolcanicSketch;
+import com.insidion.processing.assignment3.LifeExpectancySketch;
 import com.insidion.processing.assignment3.WinstcijfersSketch;
 import com.insidion.processing.framework.Assignment;
 
@@ -60,6 +61,7 @@ public class Launcher {
         listModel.addElement(new VolcanicSketch());
         listModel.addElement(new CrimeSketch());
         listModel.addElement(new WinstcijfersSketch());
+        listModel.addElement(new LifeExpectancySketch());
         this.listAssignments.setModel(this.listModel);
 
         this.listAssignments.getSelectedIndex();
