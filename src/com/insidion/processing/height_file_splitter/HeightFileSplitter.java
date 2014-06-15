@@ -10,10 +10,9 @@ import java.io.PrintWriter;
  */
 public class HeightFileSplitter {
     private static final String[] files = {
-            "C:\\Users\\mitchell\\Pictures\\opendatarotterdam_hoogtebestand2012_xyz\\rotterdamopendata_hoogtebestandtotaal_west.csv",
             "C:\\Users\\mitchell\\Pictures\\opendatarotterdam_hoogtebestand2012_xyz\\rotterdamopendata_hoogtebestandtotaal_oost.csv"};
-    private static final String dest = "C:\\Users\\mitchell\\Pictures\\opendatarotterdam_hoogtebestand2012_xyz\\processed_1000.csv";
-    private static final int distance = 1000;
+    private static final String dest = "C:\\Users\\mitchell\\Pictures\\opendatarotterdam_hoogtebestand2012_xyz\\processed_500.csv";
+    private static final int distance = 500;
     private static final int center_x = 92796;
     private static final int center_y = 436960;
 
