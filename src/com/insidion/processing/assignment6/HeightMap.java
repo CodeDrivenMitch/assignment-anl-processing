@@ -130,6 +130,14 @@ public class HeightMap extends Assignment {
     }
 
     /**
+     * Method called by the GUI after choosing a file location.
+     * @param path Path to save image in
+     */
+    public void takePicture(String path) {
+        saveFrame(path + "/height_map_####.png");
+    }
+
+    /**
      * Sets the pixel as water on the specified x and y.
      */
     private void setWater(int x, int y) {

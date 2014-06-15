@@ -22,6 +22,7 @@ public class Controller {
     private JPanel controllerPanel;
     private JSpinner spMaxH;
     private JSpinner spMinH;
+    private JButton btTakeImage;
 
     private HeightMap map;
 
@@ -110,6 +111,25 @@ public class Controller {
             @Override
             public void stateChanged(ChangeEvent e) {
                 map.setMinValue((Integer) spMinH.getValue());
+            }
+        });
+
+        btTakeImage.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                map.setPaused(true);
+                JFileChooser chooser = new JFileChooser();
+                chooser.setCurrentDirectory(new java.io.File("."));
+                chooser.setDialogTitle("Choose save location");
+                chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+                chooser.setAcceptAllFileFilterUsed(false);
+
+                if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+
+                    map.takePicture(chooser.getCurrentDirectory().getPath());
+                } else {
+                    System.out.println("No Directory selected!");
+                }
             }
         });
     }
