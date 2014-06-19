@@ -63,14 +63,7 @@ public class VolcanicSketch extends Assignment {
         }
     }
 
-    private void drawTitle() {
-        stroke(0, 0, 0);
-        fill(0, 0, 0);
 
-        textAlign(CENTER);
-        textSize(20);
-        text("Volcanic Activity in Iceland", width / 2, 30);
-    }
 
 
     /**
@@ -106,6 +99,7 @@ public class VolcanicSketch extends Assignment {
         // Draw the legend text
         fill(0, 0, 0);
         textAlign(RIGHT);
+        textSize(12);
         text("Shorter quake", width - 35, height - 120);
         text("Longer quake", width - 35, height - 10);
         text("Stronger quake", width - 165, height - 115);
@@ -126,6 +120,16 @@ public class VolcanicSketch extends Assignment {
         ellipse(width - 140, height - 60, 20, 20);
         ellipse(width - 140, height - 20, 30, 30);
 
+
+    }
+
+    private void drawTitle() {
+        stroke(0, 0, 0);
+        fill(0, 0, 0);
+
+        textAlign(CENTER);
+        textSize(20);
+        text("Volcanic Activity in Iceland", width / 2, 30);
 
     }
 
