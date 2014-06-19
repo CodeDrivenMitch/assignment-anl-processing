@@ -59,7 +59,17 @@ public class VolcanicSketch extends Assignment {
 
 
             drawLegend();
+            drawTitle();
         }
+    }
+
+    private void drawTitle() {
+        stroke(0, 0, 0);
+        fill(0, 0, 0);
+
+        textAlign(CENTER);
+        textSize(20);
+        text("Volcanic Activity in Iceland", width / 2, 30);
     }
 
 
